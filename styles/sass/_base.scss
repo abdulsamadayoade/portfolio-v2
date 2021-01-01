@@ -16,11 +16,20 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'SFUIText-SemiBold';
+    src:url('../../textfonts/SFUIText-Semibold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 /*-------------------------- VARIABLES ---------------------------*/
 
 //FONTS
 $primary-font: 'SFUIText-Regular', sans-serif;
 $secondary-font: 'SFUIText-Bold', sans-serif;
+$tertiary-font: 'SFUIText-SemiBold', sans-serif;
 
 //COLORS
 $primary-color-1: #4831D4;
@@ -74,6 +83,13 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
+}
+
+/*-------------------------- TYPOGRAPHY ---------------------------*/
+
+.h-4 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 p {
