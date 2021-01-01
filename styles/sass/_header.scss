@@ -1,0 +1,75 @@
+// NAV
+.nav-container {
+    position: absolute;
+    padding: 4rem;
+    top: 0;
+    left: 0;
+
+    .nav-icon {
+        background-color: $white-color;
+        position: absolute;
+        right: 4rem;
+        top: 2.5rem;
+        z-index: 10;
+        width: 5.5rem;
+        height: 5.5rem;
+        border-radius: 50%;
+        cursor: pointer;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        transition: transform ease-in-out .2s;
+
+        &:hover {
+            transform: scale(1.05) translateZ(0px);
+        }
+
+        .bar1, .bar2, .bar3 {
+            width: 1.7rem;
+            height: .2rem;
+            margin: .4rem 0;
+            transition: 0.4s;
+            background-color: $primary-color-2;
+            border-radius: 1rem;
+        }
+
+        .bar2 {
+            width: 2.7rem;
+            transform-origin: right;
+        }
+    }
+
+    .nav-main {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        background-color: $primary-color-2;
+        color: $white-color;
+        transform: translateX(-100%);
+        transform-origin: left;
+        transition: transform .5s;
+    }
+}
+
+.nav-main.moveIn {
+    transform: translateX(0);
+}
+
+.nav-anim .bar1 {
+    transform: rotate(-45deg) translate(-6px, 7px);
+}
+  
+.nav-anim .bar2 {
+    transform: translateX(200%);
+    opacity: 0;
+}
+  
+.nav-anim .bar3 {
+    transform: rotate(45deg) translate(-7px, -8px);
+}
