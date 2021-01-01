@@ -1,0 +1,279 @@
+/*-------------------------- FONTS ---------------------------*/
+@font-face {
+  font-family: 'SFUIText-Regular';
+  src: url("../../textfonts/SFUIText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFUIText-Bold';
+  src: url("../../textfonts/SFUIText-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFUIText-SemiBold';
+  src: url("../../textfonts/SFUIText-Semibold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*-------------------------- VARIABLES ---------------------------*/
+/*-------------------------- PRESETS ---------------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 51%;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: "SFUIText-Regular", sans-serif;
+  font-size: 1.5rem;
+  background-color: #FFFFFF;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/*-------------------------- TYPOGRAPHY ---------------------------*/
+.h-4 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+p {
+  color: #3D155F;
+}
+
+.nav-container {
+  position: absolute;
+  padding: 4rem;
+  top: 0;
+  left: 0;
+}
+
+.nav-container .nav-icon {
+  background-color: #FFFFFF;
+  position: absolute;
+  right: 4rem;
+  top: 2.5rem;
+  z-index: 10;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-container .nav-icon .bar1, .nav-container .nav-icon .bar2, .nav-container .nav-icon .bar3 {
+  width: 17px;
+  height: 2px;
+  margin: 4px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #4F46E5;
+  border-radius: 1rem;
+}
+
+.nav-container .nav-icon .bar2 {
+  width: 27px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.nav-container .nav-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-color: #4F46E5;
+  padding: 4rem;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.nav-container .nav-main__content {
+  width: 95vw;
+  position: absolute;
+  top: 15rem;
+  left: 4rem;
+  z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 4rem;
+  padding: 4rem;
+  color: #FFFFFF;
+}
+
+.nav-container .nav-main__content--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 25rem;
+}
+
+.nav-container .nav-main__content--box .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-container .nav-main__content--box .social-links--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-container .nav-main__content--box .social-links--box img {
+  margin-right: 2rem;
+  height: 1.7rem;
+}
+
+.nav-container .nav-main__content--box .social-links--box:nth-child(2) {
+  margin-top: 1rem;
+}
+
+.nav-container .nav-main__content--box .resume {
+  font-size: 3.5rem;
+  text-decoration: none;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+  font-family: "SFUIText-SemiBold", sans-serif;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.nav-container .nav-main__content--box .resume:hover {
+  letter-spacing: 3px;
+}
+
+.nav-container .nav-main__content .list {
+  justify-self: flex-start;
+}
+
+.nav-container .nav-main__content .list__item {
+  list-style: none;
+}
+
+.nav-container .nav-main__content .list__item:not(:last-child) {
+  margin-bottom: 3.5rem;
+}
+
+.nav-container .nav-main__content .list__item a {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "SFUIText-SemiBold", sans-serif;
+  letter-spacing: .5px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.nav-container .nav-main__content .list__item a:hover {
+  letter-spacing: 3px;
+}
+
+.nav-main.moveIn {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.nav-anim .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 7px);
+          transform: rotate(-45deg) translate(-6px, 7px);
+}
+
+.nav-anim .bar2 {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  opacity: 0;
+}
+
+.nav-anim .bar3 {
+  -webkit-transform: rotate(45deg) translate(-7px, -8px);
+          transform: rotate(45deg) translate(-7px, -8px);
+}

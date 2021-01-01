@@ -11,8 +11,8 @@
         right: 4rem;
         top: 2.5rem;
         z-index: 10;
-        width: 5.5rem;
-        height: 5.5rem;
+        width: 5rem;
+        height: 5rem;
         border-radius: 50%;
         cursor: pointer;
         position: fixed;
@@ -20,24 +20,18 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 1rem;
-        transition: transform ease-in-out .2s;
-
-        &:hover {
-            transform: scale(1.05) translateZ(0px);
-        }
 
         .bar1, .bar2, .bar3 {
-            width: 1.7rem;
-            height: .2rem;
-            margin: .4rem 0;
+            width: 17px;
+            height: 2px;
+            margin: 4px 0;
             transition: 0.4s;
             background-color: $primary-color-2;
             border-radius: 1rem;
         }
 
         .bar2 {
-            width: 2.7rem;
+            width: 27px;
             transform-origin: right;
         }
     }
@@ -50,10 +44,84 @@
         width: 100%;
         height: 100vh;
         background-color: $primary-color-2;
-        color: $white-color;
+        padding: 4rem;
         transform: translateX(-100%);
         transform-origin: left;
         transition: transform .5s;
+
+        &__content {
+            width: 95vw;
+            position: absolute;
+            top: 15rem;
+            left: 4rem;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+            grid-gap: 4rem;
+            padding: 4rem;
+            color: $white-color;
+
+            &--box {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                min-height: 25rem;
+
+                // @include rwd(768) {
+                //     min-height: 28rem;
+                // }
+
+                .social-links {
+                    display: flex;
+                    flex-direction: column;
+                    &--box {
+                        display: flex;
+                        align-items: center;
+                        img {
+                            margin-right: 2rem;
+                            height: 1.7rem;
+                        }
+                    }
+                    &--box:nth-child(2) {
+                        margin-top: 1rem;
+                    }
+                }
+                .resume {
+                    font-size: 3.5rem;
+                    text-decoration: none;
+                    letter-spacing: -1px;
+                    color: $white-color;
+                    font-family: $tertiary-font;
+                    align-self: flex-start;
+                    transition: all .2s ease-in-out;
+                    &:hover {
+                        letter-spacing: 3px;
+                    }
+                }
+            }
+
+            .list {
+                justify-self: flex-start;
+                &__item {
+                    list-style: none;
+                    &:not(:last-child) {
+                        margin-bottom: 3.5rem;
+                    }
+                    a {
+                        text-transform: uppercase;
+                        font-size: 2.5rem;
+                        text-decoration: none;
+                        color: $white-color;
+                        font-family: $tertiary-font;
+                        letter-spacing: .5px;
+                        transition: all .2s ease-in-out;
+                        &:hover {
+                            letter-spacing: 3px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
