@@ -8,8 +8,8 @@
 }
 
 @font-face {
-  font-family: 'SFUIText-Bold';
-  src: url("../../textfonts/SFUIText-Bold.woff") format("woff");
+  font-family: 'Archivo-Black';
+  src: url("../../textfonts/ArchivoBlack-Regular.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -94,6 +94,18 @@ p {
   left: 0;
 }
 
+.nav-container .logo {
+  font-family: "Archivo-Black", sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  letter-spacing: -.6px;
+  color: #4F46E5;
+}
+
+.nav-container .logo:hover {
+  opacity: .8;
+}
+
 .nav-container .nav-icon {
   background-color: #FFFFFF;
   position: absolute;
@@ -156,6 +168,8 @@ p {
 
 .nav-container .nav-main .logo {
   padding: 4rem;
+  color: #FFFFFF;
+  display: inline-block;
 }
 
 .nav-container .nav-main__content {

@@ -9,8 +9,8 @@
 }
 
 @font-face {
-    font-family: 'SFUIText-Bold';
-    src:url('../../textfonts/SFUIText-Bold.woff') format('woff');
+    font-family: 'Archivo-Black';
+    src:url('../../textfonts/ArchivoBlack-Regular.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -28,7 +28,7 @@
 
 //FONTS
 $primary-font: 'SFUIText-Regular', sans-serif;
-$secondary-font: 'SFUIText-Bold', sans-serif;
+$secondary-font: 'Archivo-Black', sans-serif;
 $tertiary-font: 'SFUIText-SemiBold', sans-serif;
 
 //COLORS
