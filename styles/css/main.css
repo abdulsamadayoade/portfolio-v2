@@ -8,16 +8,24 @@
 }
 
 @font-face {
-  font-family: 'Archivo-Black';
-  src: url("../../textfonts/ArchivoBlack-Regular.ttf") format("truetype");
+  font-family: 'SFUIText-SemiBold';
+  src: url("../../textfonts/SFUIText-Semibold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'SFUIText-SemiBold';
-  src: url("../../textfonts/SFUIText-Semibold.woff") format("woff");
+  font-family: 'SFUIText-Bold';
+  src: url("../../textfonts/SFUIText-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Archivo-Black';
+  src: url("../../textfonts/ArchivoBlack-Regular.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -39,10 +47,7 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-  width: 100%;
 }
 
 @media only screen and (max-width: 62.5em) {
@@ -71,13 +76,20 @@ html {
 
 body {
   font-family: "SFUIText-Regular", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  line-height: 1.4;
   background-color: #FFFFFF;
   position: relative;
   width: 100%;
 }
 
+/*-------------------------- IMAGES ---------------------------*/
 /*-------------------------- TYPOGRAPHY ---------------------------*/
+.h-2 {
+  font-size: 2.7rem;
+  font-family: "SFUIText-Bold", sans-serif;
+}
+
 .h-4 {
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -298,4 +310,63 @@ p {
 .nav-anim .bar3 {
   -webkit-transform: rotate(45deg) translate(-7px, -8px);
           transform: rotate(45deg) translate(-7px, -8px);
+}
+
+main {
+  position: relative;
+  top: 12rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero {
+  width: 730px;
+  max-width: 100%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 1fr;
+      grid-template-columns: 300px 1fr;
+  gap: 20px 10px;
+}
+
+.hero__photo--box {
+  position: relative;
+  width: 270px;
+  height: 270px;
+}
+
+.hero__photo--box::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: -50px;
+  height: 200px;
+  width: 200px;
+  background-image: url("../../images/lines.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.hero__photo img {
+  width: 100%;
+  outline: 3px solid #4F46E5;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1.5;
 }

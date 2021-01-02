@@ -1,0 +1,53 @@
+main {
+    position: relative;
+    top: 12rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+// HERO SECTION
+
+.hero {
+    width: 730px;
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px 10px;
+
+    &__photo {
+
+        &--box {
+            position: relative;
+            width: 270px;
+            height: 270px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -40px;
+                left: -50px;
+                height: 200px;
+                width: 200px;
+                background-image: url('../../images/lines.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                z-index: -1;
+            }
+        }
+
+        img {
+            width: 100%;
+            outline: 3px solid $primary-color-2;
+            object-fit: cover;
+        }
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.5;
+    }
+}
