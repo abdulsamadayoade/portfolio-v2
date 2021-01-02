@@ -9,14 +9,6 @@
 }
 
 @font-face {
-    font-family: 'Archivo-Black';
-    src:url('../../textfonts/ArchivoBlack-Regular.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'SFUIText-SemiBold';
     src:url('../../textfonts/SFUIText-Semibold.woff') format('woff');
     font-weight: bold;
@@ -24,12 +16,30 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'SFUIText-Bold';
+    src:url('../../textfonts/SFUIText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo-Black';
+    src:url('../../textfonts/ArchivoBlack-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 /*-------------------------- VARIABLES ---------------------------*/
 
 //FONTS
 $primary-font: 'SFUIText-Regular', sans-serif;
-$secondary-font: 'Archivo-Black', sans-serif;
+$secondary-font: 'SFUIText-Bold', sans-serif;
 $tertiary-font: 'SFUIText-SemiBold', sans-serif;
+$logo-font: 'Archivo-Black', sans-serif;
 
 //COLORS
 $primary-color-1: #4831D4;
@@ -52,11 +62,7 @@ html {
     font-size: 62.5%; // 10px
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
-    width: 100%;
-    // height: 100%;
     
     @media only screen and (max-width: 62.5em) { // tab-landscape
         font-size: 56.25%;
@@ -78,14 +84,25 @@ html {
 
 body {
     font-family: $primary-font;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 1.4;
     background-color: $white-color;
     position: relative;
     width: 100%;
-    // height: 100%;
 }
 
+/*-------------------------- IMAGES ---------------------------*/
+
+// img {
+//     width: 100%;
+// }
+
 /*-------------------------- TYPOGRAPHY ---------------------------*/
+
+.h-2 {
+    font-size: 2.7rem;
+    font-family: $secondary-font;
+}
 
 .h-4 {
     text-transform: uppercase;
