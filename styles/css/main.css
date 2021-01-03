@@ -113,9 +113,11 @@ p {
 .nav-container .logo {
   font-family: "Archivo-Black", sans-serif;
   font-size: 25px;
-  text-decoration: none;
   letter-spacing: -.6px;
   color: #4F46E5;
+  position: absolute;
+  left: 4rem;
+  top: 3rem;
 }
 
 .nav-container .logo:hover {

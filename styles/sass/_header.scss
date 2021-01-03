@@ -8,9 +8,11 @@
     .logo {
         font-family: $logo-font;
         font-size: 25px;
-        text-decoration: none;
         letter-spacing: -.6px;
         color: $primary-color-2;
+        position: absolute;
+        left: 4rem;
+        top: 3rem;
 
         &:hover {
             opacity: .8;
