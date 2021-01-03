@@ -17,9 +17,17 @@
 
     .logo--blue {
         color: $primary-color-2;
-        position: absolute;
+        position: fixed;
         left: 4rem;
         top: 3rem;
+    }
+
+    .logo--white {
+        padding: 4rem;
+        color: $white-color;
+        display: inline-block;
+        position: fixed;
+        top: -1.2rem;
     }
 
     .nav-icon {
@@ -65,17 +73,10 @@
         transform-origin: left;
         transition: transform .5s;
 
-        .logo--white {
-            padding: 4rem;
-            color: $white-color;
-            display: inline-block;
-        }
-
         &__content {
             width: 95vw;
             position: absolute;
             top: 12rem;
-            // left: 4rem;
             z-index: 2;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
