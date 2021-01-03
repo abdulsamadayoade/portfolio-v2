@@ -47,6 +47,7 @@ $primary-color-2: #4F46E5;
 $secondary-color: #3D155F;
 $tertiary-color: #CCF381;
 $white-color: #FFFFFF;
+$black-color: #1F2937;
 
 /*-------------------------- PRESETS ---------------------------*/
 
@@ -90,6 +91,8 @@ body {
     position: relative;
     width: 100%;
 }
+
+a {text-decoration: none;}
 
 /*-------------------------- IMAGES ---------------------------*/
 

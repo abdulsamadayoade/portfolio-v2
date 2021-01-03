@@ -83,6 +83,10 @@ body {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*-------------------------- IMAGES ---------------------------*/
 /*-------------------------- TYPOGRAPHY ---------------------------*/
 .h-2 {
@@ -315,7 +319,7 @@ p {
 main {
   position: relative;
   top: 16rem;
-  padding: 2rem;
+  padding: 2.5rem;
   max-width: 1200px;
   margin: auto;
 }
@@ -369,4 +373,63 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   line-height: 1.5;
+  color: #1F2937;
+}
+
+.hero__details .scroll-down {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  color: #4b5563;
+  font-size: 1.7rem;
+}
+
+.hero__details .scroll-down .scroll-svg {
+  height: 16px;
+  width: 16px;
+  margin-left: 10px;
+  -webkit-animation-name: scrollDown;
+          animation-name: scrollDown;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes scrollDown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    opacity: 0;
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    opacity: 0;
+  }
 }
