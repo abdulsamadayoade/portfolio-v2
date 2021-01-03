@@ -18,8 +18,12 @@
     .logo--blue {
         color: $primary-color-2;
         position: fixed;
+        background-color: $white-color;
+        padding: 0 20px;
+        border-radius: 5px;
         left: 4rem;
         top: 3rem;
+        z-index: 10;
     }
 
     .logo--white {

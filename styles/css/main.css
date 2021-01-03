@@ -123,8 +123,12 @@ p {
 .nav-container .logo--blue {
   color: #4F46E5;
   position: fixed;
+  background-color: #FFFFFF;
+  padding: 0 20px;
+  border-radius: 5px;
   left: 4rem;
   top: 3rem;
+  z-index: 10;
 }
 
 .nav-container .logo--white {
