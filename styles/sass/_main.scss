@@ -1,7 +1,7 @@
 main {
     position: relative;
     top: 16rem;
-    padding: 25px;
+    padding: 0 25px;
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -10,6 +10,7 @@ main {
 // HERO SECTION
 
 .hero {
+    height: 70vh;
     width: 730px;
     max-width: 100%;
     margin: auto;
