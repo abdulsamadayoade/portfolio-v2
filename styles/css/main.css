@@ -333,13 +333,23 @@ main {
   display: grid;
   -ms-grid-columns: 300px 1fr;
       grid-template-columns: 300px 1fr;
-  gap: 20px 10px;
+  gap: 35px 10px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    justify-items: center;
+  }
 }
 
 .hero__photo--box {
   position: relative;
-  width: 270px;
-  height: 270px;
+  width: 27rem;
+  height: 27rem;
 }
 
 .hero__photo--box::before {
@@ -377,6 +387,14 @@ main {
   color: #1F2937;
 }
 
+@media (max-width: 768px) {
+  .hero__details {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .hero__details .scroll-down {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -386,7 +404,15 @@ main {
           align-items: center;
   margin-top: 20px;
   color: #4b5563;
-  font-size: 1.7rem;
+  font-size: 17px;
+}
+
+@media (max-width: 500px) {
+  .hero__details .scroll-down {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .hero__details .scroll-down .scroll-svg {

@@ -15,14 +15,20 @@ main {
     margin: auto;
     display: grid;
     grid-template-columns: 300px 1fr;
-    gap: 20px 10px;
+    gap: 35px 10px;
+
+    @include rwd(768) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
 
     &__photo {
 
         &--box {
             position: relative;
-            width: 270px;
-            height: 270px;
+            width: 27rem;
+            height: 27rem;
 
             &::before {
                 content: "";
@@ -52,12 +58,20 @@ main {
         line-height: 1.5;
         color: $black-color;
 
+        @include rwd(768) {
+            justify-content: flex-start;
+        }
+
         .scroll-down {
             display: inline-flex;
             align-items: center;
             margin-top: 20px;
             color: hsl(215, 14%, 34%);
-            font-size: 1.7rem;
+            font-size: 17px;
+
+            @include rwd(500) {
+                justify-content: center;
+            }
 
             .scroll-svg {
                 height: 16px;
