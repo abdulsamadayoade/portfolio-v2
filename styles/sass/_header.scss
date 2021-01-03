@@ -23,7 +23,7 @@
         border-radius: 5px;
         left: 4rem;
         top: 3rem;
-        z-index: 10;
+        z-index: 1;
     }
 
     .logo--white {
@@ -32,6 +32,7 @@
         display: inline-block;
         position: fixed;
         top: -1.2rem;
+        z-index: 100;
     }
 
     .nav-icon {
