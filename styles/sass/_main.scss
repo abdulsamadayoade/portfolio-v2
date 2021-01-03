@@ -1,7 +1,8 @@
 main {
     position: relative;
     top: 16rem;
-    padding: 2.5rem;
+    padding: 25px;
+    width: 100%;
     max-width: 1200px;
     margin: auto;
 }
@@ -26,10 +27,10 @@ main {
             &::before {
                 content: "";
                 position: absolute;
-                top: -40px;
-                left: -50px;
-                height: 200px;
-                width: 200px;
+                top: -4rem;
+                left: -5rem;
+                height: 20rem;
+                width: 20rem;
                 background-image: url('../../images/lines.svg');
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -58,19 +59,13 @@ main {
             color: hsl(215, 14%, 34%);
             font-size: 1.7rem;
 
-            // &:hover svg {
-            //     transform: translateY(5px);
-            // }
-
             .scroll-svg {
                 height: 16px;
                 width: 16px;
                 margin-left: 10px;
-                // transition: transform 0.5s;
                 animation-name: scrollDown;
-                animation-duration: 1.5s;
+                animation-duration: 1s;
                 animation-iteration-count: infinite;
-                animation-fill-mode: forwards;
             }
 
             @keyframes scrollDown {

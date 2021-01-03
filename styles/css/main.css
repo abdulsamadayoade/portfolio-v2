@@ -319,7 +319,8 @@ p {
 main {
   position: relative;
   top: 16rem;
-  padding: 2.5rem;
+  padding: 25px;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
 }
@@ -344,10 +345,10 @@ main {
 .hero__photo--box::before {
   content: "";
   position: absolute;
-  top: -40px;
-  left: -50px;
-  height: 200px;
-  width: 200px;
+  top: -4rem;
+  left: -5rem;
+  height: 20rem;
+  width: 20rem;
   background-image: url("../../images/lines.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -394,12 +395,10 @@ main {
   margin-left: 10px;
   -webkit-animation-name: scrollDown;
           animation-name: scrollDown;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes scrollDown {
