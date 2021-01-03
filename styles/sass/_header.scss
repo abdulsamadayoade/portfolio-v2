@@ -9,14 +9,17 @@
         font-family: $logo-font;
         font-size: 25px;
         letter-spacing: -.6px;
-        color: $primary-color-2;
-        position: absolute;
-        left: 4rem;
-        top: 3rem;
 
         &:hover {
             opacity: .8;
         }
+    }
+
+    .logo--blue {
+        color: $primary-color-2;
+        position: absolute;
+        left: 4rem;
+        top: 3rem;
     }
 
     .nav-icon {
@@ -62,7 +65,7 @@
         transform-origin: left;
         transition: transform .5s;
 
-        .logo {
+        .logo--white {
             padding: 4rem;
             color: $white-color;
             display: inline-block;

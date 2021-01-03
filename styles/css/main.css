@@ -114,14 +114,17 @@ p {
   font-family: "Archivo-Black", sans-serif;
   font-size: 25px;
   letter-spacing: -.6px;
-  color: #4F46E5;
-  position: absolute;
-  left: 4rem;
-  top: 3rem;
 }
 
 .nav-container .logo:hover {
   opacity: .8;
+}
+
+.nav-container .logo--blue {
+  color: #4F46E5;
+  position: absolute;
+  left: 4rem;
+  top: 3rem;
 }
 
 .nav-container .nav-icon {
@@ -184,7 +187,7 @@ p {
   transition: transform .5s, -webkit-transform .5s;
 }
 
-.nav-container .nav-main .logo {
+.nav-container .nav-main .logo--white {
   padding: 4rem;
   color: #FFFFFF;
   display: inline-block;
