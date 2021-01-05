@@ -68,7 +68,6 @@ main {
         flex-direction: column;
         justify-content: center;
         line-height: 1.5;
-        color: $black-color;
 
         @include rwd(768) {
             justify-content: flex-start;
@@ -108,6 +107,37 @@ main {
                     transform: translateY(5px);
                     opacity: 0;
                 }
+            }
+        }
+    }
+}
+
+// ABOUT SECTION
+.about--section {
+    padding: 10rem 0;
+
+    .about {
+        display: flex;
+
+        &__col--1 {
+            flex-basis: 65%;
+        
+            p:not(:last-child) {
+                margin-bottom: 17px;
+            }
+        }
+
+        &__col--2 {
+            flex-basis: 35%;
+            display: flex;
+            justify-content: center;
+        }
+
+        @include rwd(768) {
+            flex-direction: column;
+            
+            &__col--2 {
+                margin-top: 4rem;
             }
         }
     }
