@@ -328,18 +328,35 @@ p {
 
 main {
   position: relative;
-  top: 16rem;
   padding: 0 25px;
   width: 100%;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  main {
+    top: 5rem;
+  }
 }
 
 .hero {
-  height: 70vh;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
   width: 730px;
   max-width: 100%;
-  margin: auto;
+}
+
+.hero__container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 300px 1fr;
@@ -348,12 +365,10 @@ main {
 }
 
 @media (max-width: 768px) {
-  .hero {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+  .hero__container {
     justify-items: center;
+    -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   }
 }
 

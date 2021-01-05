@@ -1,27 +1,38 @@
 main {
     position: relative;
-    top: 16rem;
     padding: 0 25px;
     width: 100%;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
+
+    @include rwd(768) {
+        top: 5rem;
+    }
 }
 
 // HERO SECTION
 
 .hero {
-    height: 70vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     width: 730px;
     max-width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 35px 10px;
 
-    @include rwd(768) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
+    &__container {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 35px 10px;
+
+        @include rwd(768) {
+            // grid-template-columns: 1fr;
+            // grid-template-rows: repeat(1fr);
+            justify-items: center;
+            // align-content: center;
+            grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        }
     }
 
     &__photo {
