@@ -1,0 +1,21 @@
+%logoShared {
+    font-family: $logo-font;
+    font-size: 25px;
+    letter-spacing: -.6px;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+@mixin rwd($screen) {
+    @media (max-width: $screen+'px') {
+        @content;
+    }
+}
+
+@mixin rwdHeight($screen) {
+    @media (max-height: $screen+'px') {
+        @content;
+    }
+}

@@ -1,14 +1,14 @@
 // NAV HAMBURGR MENU
-const navIcon = document.querySelector('.nav-icon');
-const navMain = document.querySelector('.nav-main');
+const navIcon = document.querySelector('.nav--icon');
+const navSecond = document.querySelector('.nav--second');
 
 navIcon.addEventListener('click', function () {
 
-    if (this.classList.contains('nav-anim')) {
-        this.classList.remove('nav-anim');
-        navMain.classList.remove('moveIn');
+    if (this.classList.contains('nav--anim')) {
+        this.classList.remove('nav--anim');
+        navSecond.classList.remove('showIn');
     } else {
-        this.classList.add('nav-anim');
-        navMain.classList.add('moveIn');
+        this.classList.add('nav--anim');
+        navSecond.classList.add('showIn');
     }
 });
