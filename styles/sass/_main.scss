@@ -11,7 +11,6 @@ main {
 }
 
 // HERO SECTION
-
 .hero {
     height: 100vh;
     display: flex;
@@ -114,7 +113,7 @@ main {
 
 // ABOUT SECTION
 .about--section {
-    padding: 10rem 0;
+    padding: 13rem 0;
 
     .about {
         display: flex;
@@ -123,7 +122,7 @@ main {
             flex-basis: 65%;
         
             p:not(:last-child) {
-                margin-bottom: 17px;
+                margin-bottom: 20px;
             }
         }
 
@@ -139,6 +138,60 @@ main {
             &__col--2 {
                 margin-top: 4rem;
             }
+        }
+    }
+}
+
+// PROJECTS SECTION
+.projects--section {
+    padding: 13rem 0;
+
+    p {
+        width: 500px;
+        max-width: 100%;
+    }
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 6rem 9rem;
+    margin-top: 50px;
+
+    &__image {
+        width: 100%;
+    }
+
+    &__name {
+        margin: 15px 0 7px;
+        font-size: 2rem;
+        color: $primary-color-1;
+        font-family: $secondary-font;
+    }
+    
+    &__description {
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        color: $primary-color-1;
+        position: relative;
+        padding-bottom: 3px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            width: 100%;
+            background-color: $primary-color-1;
+            opacity: 0;
+            transition: opacity .2s ease-in-out;
+        }
+
+        &:hover::after {
+            opacity: 1;
         }
     }
 }
