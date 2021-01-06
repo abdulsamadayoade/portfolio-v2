@@ -154,7 +154,7 @@ main {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 6rem 9rem;
     margin-top: 50px;
 
