@@ -1,3 +1,12 @@
+.center-item {
+    display: grid;
+    place-items: center;
+}
+
+.margin-top-medium {
+    margin-top: 50px;
+}
+
 %logoShared {
     font-family: $logo-font;
     font-size: 25px;

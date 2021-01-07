@@ -126,6 +126,16 @@ p {
   color: #3D155F;
 }
 
+.center-item {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.margin-top-medium {
+  margin-top: 50px;
+}
+
 .nav--first .logo--blue, .nav--second .logo--white {
   font-family: "Archivo-Black", sans-serif;
   font-size: 25px;
