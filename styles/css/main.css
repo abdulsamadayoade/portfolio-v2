@@ -361,14 +361,30 @@ p {
 
 .btn {
   display: inline-block;
-  background-color: #4831D4;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  color: #FFFFFF;
   padding: 1.2rem 3rem;
   font-size: 1.4rem;
   letter-spacing: .4px;
+}
+
+.btn--blue {
+  background-color: #4831D4;
+  color: #FFFFFF;
+  border: 2px solid transparent;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.btn--blue:hover {
+  color: #4831D4;
+  background-color: #FFFFFF;
+  border-color: #4831D4;
+}
+
+.btn--white {
+  border: 2px solid #4831D4;
 }
 
 main {
