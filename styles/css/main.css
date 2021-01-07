@@ -626,3 +626,36 @@ main {
 .projects__link:hover::after {
   opacity: 1;
 }
+
+.contact--section {
+  padding: 13rem 0;
+}
+
+.contact--section p {
+  width: 500px;
+  max-width: 100%;
+}
+
+.contact--section .mail {
+  color: #4831D4;
+  display: inline-block;
+  margin-top: 20px;
+  padding-bottom: 3px;
+  position: relative;
+}
+
+.contact--section .mail::after {
+  content: '';
+  background-color: #4831D4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2.5px;
+  width: 100%;
+  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+}
+
+.contact--section .mail:hover::after {
+  opacity: 0;
+}
