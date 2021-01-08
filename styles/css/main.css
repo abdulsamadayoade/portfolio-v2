@@ -492,7 +492,7 @@ main {
 
 .hero__photo img {
   width: 100%;
-  outline: 3px solid #4F46E5;
+  outline: 2.5px solid #4F46E5;
   -o-object-fit: cover;
      object-fit: cover;
 }
