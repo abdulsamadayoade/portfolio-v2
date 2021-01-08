@@ -170,24 +170,32 @@ main {
     }
     
     &__description {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
 
     &__link {
         color: $primary-color-1;
         position: relative;
+        font-size: 13px;
         padding-bottom: 3px;
+        text-transform: uppercase;
+        font-family: $tertiary-font;
 
         &::after {
             content: '';
             position: absolute;
             bottom: 0;
             left: 0;
-            height: 3px;
+            height: 2.3px;
             width: 100%;
             background-color: $primary-color-1;
             opacity: 0;
             transition: opacity .2s ease-in-out;
+        }
+
+        span {
+            font-family: $tertiary-font;
+            font-size: 1.8rem;
         }
 
         &:hover::after {
