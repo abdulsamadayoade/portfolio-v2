@@ -12,3 +12,10 @@ navIcon.addEventListener('click', function () {
         navSecond.classList.add('showIn');
     }
 });
+
+// CLOSE THE NAV WHEN THE NAV LINKS ARE GETTING CLICKED
+const project = document.getElementById('pro');
+
+project.addEventListener('click', function () {
+    navSecond.classList.remove('showIn');
+});
