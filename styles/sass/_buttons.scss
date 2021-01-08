@@ -20,5 +20,37 @@
 }
 
 .btn--white {
-    border: 2px solid $primary-color-1;
+    border: 1px solid $primary-color-1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: $tertiary-font;
+    letter-spacing: .14rem;
+    min-height: 5.4rem;
+    min-width: 27.2rem;
+    overflow: hidden;
+    position: relative;
+    transition: all .5s ease;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -10%;
+        height: 100%;
+        width: 0;
+        background-color: $primary-color-1;
+        z-index: -1;
+        transition: width .5s ease-in-out;
+    }
+
+    &:hover {
+        color: $white-color;
+    }
+
+    &:hover::before {
+        width: 120%;
+    }
 }
