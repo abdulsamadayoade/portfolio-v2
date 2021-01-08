@@ -18,4 +18,5 @@ const project = document.getElementById('pro');
 
 project.addEventListener('click', function () {
     navSecond.classList.remove('showIn');
+    navIcon.classList.remove('nav--anim');
 });
