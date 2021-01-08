@@ -645,8 +645,17 @@ main {
   margin-top: 50px;
 }
 
+.projects__box:hover .projects__image {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
 .projects__image {
   width: 100%;
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
 }
 
 .projects__name {
