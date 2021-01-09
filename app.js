@@ -14,9 +14,19 @@ navIcon.addEventListener('click', function () {
 });
 
 // CLOSE THE NAV WHEN THE NAV LINKS ARE GETTING CLICKED
-const project = document.getElementById('pro');
+const navLinks = document.querySelectorAll('.nav__link');
 
-project.addEventListener('click', function () {
+navLinks.forEach(function (navLink) {
+    navLink.addEventListener('click', function () {
+        navSecond.classList.remove('showIn');
+        navIcon.classList.remove('nav--anim');
+    })
+});
+
+// CLOSE THE NAV WHEN THE SIDE NAV LOGO IS CLICKED
+const logoWhite = document.querySelector('.logo--white');
+
+logoWhite.addEventListener('click', function () {
     navSecond.classList.remove('showIn');
     navIcon.classList.remove('nav--anim');
-});
+})
