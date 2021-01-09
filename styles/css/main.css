@@ -155,8 +155,7 @@ p {
 
 .nav--first .logo--blue {
   color: #4F46E5;
-  position: fixed;
-  background-color: #FFFFFF;
+  position: absolute;
   padding: 0 20px;
   left: 1.5rem;
   top: 3rem;
