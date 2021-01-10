@@ -17,6 +17,13 @@
     }
 }
 
+%layoutShared {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 @mixin rwd($screen) {
     @media (max-width: $screen+'px') {
         @content;
