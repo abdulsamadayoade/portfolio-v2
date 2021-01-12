@@ -2,6 +2,7 @@
     top: 130px;
 }
 
+// PROJECTS GUIDE SECTION
 .project-guide {
     h1 {
         color: $primary-color-1;
@@ -56,13 +57,13 @@
         margin-top: 15rem;
 
         h2 {
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
 
         .screenshots-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 40px 30px;
+            gap: 40px;
         }
 
         img {
@@ -70,4 +71,10 @@
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
     }
+}
+
+// OTHER PROJECTS SECTION
+.other-projects {
+    margin-top: 5rem;
+    padding: 30rem 0 5rem;
 }
