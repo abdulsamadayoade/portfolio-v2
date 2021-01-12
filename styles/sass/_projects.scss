@@ -51,4 +51,23 @@
             }
         }
     }
+
+    &__screenshots {
+        margin-top: 15rem;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        .screenshots-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px 30px;
+        }
+
+        img {
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+    }
 }

@@ -852,3 +852,25 @@ main {
 .project-guide__brief .view-site:hover::after {
   opacity: 0;
 }
+
+.project-guide__screenshots {
+  margin-top: 15rem;
+}
+
+.project-guide__screenshots h2 {
+  margin-bottom: 30px;
+}
+
+.project-guide__screenshots .screenshots-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 40px 30px;
+}
+
+.project-guide__screenshots img {
+  width: 100%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
