@@ -805,13 +805,13 @@ main {
 }
 
 .projects--main {
-  top: 130px;
+  top: 12rem;
 }
 
 .project-guide h1 {
   color: #4831D4;
   font-family: "SFUIText-Bold", sans-serif;
-  font-size: 3rem;
+  font-size: 2.7rem;
   margin-bottom: 25px;
 }
 
@@ -823,10 +823,11 @@ main {
 
 .project-guide__brief {
   margin-top: 50px;
+  max-width: 700px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (300px)[3];
-      grid-template-columns: repeat(3, 300px);
+  -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
 .project-guide__brief h4 {
@@ -870,9 +871,9 @@ main {
 .project-guide__screenshots .screenshots-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 7rem 5rem;
 }
 
 .project-guide__screenshots img {
