@@ -1,0 +1,52 @@
+.projects--main {
+    top: 130px;
+}
+
+.project-guide {
+    h1 {
+        color: $primary-color-1;
+        font-family: $secondary-font;
+        font-size: 3rem;
+        margin-bottom: 25px;
+    }
+
+    p {
+        line-height: 1.75;
+    }
+
+    &__brief {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        // grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+
+        h4 {
+            color: $primary-color-1;
+            text-transform: uppercase;
+            font-size: 1.28rem;
+            letter-spacing: .8px;
+            margin-bottom: 25px;
+        }
+
+        .view-site {
+            position: relative;
+            padding-bottom: 3px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 3px;
+                width: 100%;
+                background-color: $tertiary-color;
+                opacity: 1;
+                transition: opacity .4s ease-out;
+            }
+
+            &:hover::after {
+                opacity: 0;
+            }
+        }
+    }
+}

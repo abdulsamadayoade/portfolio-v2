@@ -136,6 +136,18 @@ p {
   margin-top: 50px;
 }
 
+.w-700 {
+  max-width: 700px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
 .nav--first .logo--blue, .nav--second .logo--white, .footer .logo--blue {
   font-family: "Archivo-Black", sans-serif;
   font-size: 25px;
@@ -788,4 +800,57 @@ main {
 
 .footer__link:hover::after {
   width: 15px;
+}
+
+.projects--main {
+  top: 130px;
+}
+
+.project-guide h1 {
+  color: #4831D4;
+  font-family: "SFUIText-Bold", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 25px;
+}
+
+.project-guide p {
+  line-height: 1.75;
+}
+
+.project-guide__brief {
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (300px)[3];
+      grid-template-columns: repeat(3, 300px);
+}
+
+.project-guide__brief h4 {
+  color: #4831D4;
+  text-transform: uppercase;
+  font-size: 1.28rem;
+  letter-spacing: .8px;
+  margin-bottom: 25px;
+}
+
+.project-guide__brief .view-site {
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.project-guide__brief .view-site::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #CCF381;
+  opacity: 1;
+  -webkit-transition: opacity .4s ease-out;
+  transition: opacity .4s ease-out;
+}
+
+.project-guide__brief .view-site:hover::after {
+  opacity: 0;
 }
