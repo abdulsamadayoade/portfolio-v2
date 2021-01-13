@@ -876,6 +876,13 @@ main {
   grid-gap: 7rem 5rem;
 }
 
+@media (min-width: 1200px) {
+  .project-guide__screenshots .screenshots-container {
+    -ms-grid-columns: (minmax(35rem, 55rem))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 55rem));
+  }
+}
+
 .project-guide__screenshots img {
   width: 100%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -884,5 +891,5 @@ main {
 
 .other-projects {
   margin-top: 5rem;
-  padding: 30rem 0 20rem;
+  padding: 13rem 0 20rem;
 }
