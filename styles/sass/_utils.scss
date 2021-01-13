@@ -42,6 +42,12 @@
     }
 }
 
+@mixin rwdMin($screen) {
+    @media (min-width: $screen+'px') {
+        @content;
+    }
+}
+
 @mixin rwdHeight($screen) {
     @media (max-height: $screen+'px') {
         @content;
