@@ -170,6 +170,8 @@ main, .footer {
   padding: 4rem;
   top: 0;
   left: 0;
+  -webkit-animation: fade-in ease-in .5s;
+          animation: fade-in ease-in .5s;
 }
 
 .nav--first .logo--blue {
@@ -373,6 +375,24 @@ main, .footer {
 .nav--anim .bar3 {
   -webkit-transform: rotate(45deg) translate(-7px, -8px);
           transform: rotate(45deg) translate(-7px, -8px);
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .btn {

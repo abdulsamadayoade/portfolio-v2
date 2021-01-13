@@ -4,6 +4,7 @@
     padding: 4rem;
     top: 0;
     left: 0;
+    animation: fade-in ease-in .5s;
 
     .logo--blue {
         color: $primary-color-2;
@@ -160,4 +161,13 @@
   
 .nav--anim .bar3 {
     transform: rotate(45deg) translate(-7px, -8px);
+}
+
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
