@@ -550,6 +550,28 @@ main {
   }
 }
 
+.hero__details .fadeIn--1,
+.hero__details .fadeIn--2,
+.hero__details .fadeIn--3 {
+  display: inline-block;
+  opacity: 0;
+}
+
+.hero__details .fadeIn--1 {
+  -webkit-animation: fade-in-down ease-in .5s .5s forwards;
+          animation: fade-in-down ease-in .5s .5s forwards;
+}
+
+.hero__details .fadeIn--2 {
+  -webkit-animation: fade-in-down ease-in .5s 1s forwards;
+          animation: fade-in-down ease-in .5s 1s forwards;
+}
+
+.hero__details .fadeIn--3 {
+  -webkit-animation: fade-in-down ease-in .5s 1.5s forwards;
+          animation: fade-in-down ease-in .5s 1.5s forwards;
+}
+
 .hero__details .scroll-down {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -560,6 +582,9 @@ main {
   margin-top: 20px;
   color: #4b5563;
   font-size: 17px;
+  opacity: 0;
+  -webkit-animation: fade-in-up ease-in .5s 2s forwards;
+          animation: fade-in-up ease-in .5s 2s forwards;
 }
 
 @media (max-width: 500px) {
@@ -766,6 +791,54 @@ main {
 
 .contact--section .mail:hover::after {
   opacity: 0;
+}
+
+@-webkit-keyframes fade-in-down {
+  from {
+    -webkit-transform: translateY(-2.5rem);
+            transform: translateY(-2.5rem);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-down {
+  from {
+    -webkit-transform: translateY(-2.5rem);
+            transform: translateY(-2.5rem);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in-up {
+  from {
+    -webkit-transform: translateY(2.5rem);
+            transform: translateY(2.5rem);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    -webkit-transform: translateY(2.5rem);
+            transform: translateY(2.5rem);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .footer {

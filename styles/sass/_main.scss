@@ -68,12 +68,33 @@ main {
             justify-content: flex-start;
         }
 
+        .fadeIn--1,
+        .fadeIn--2,
+        .fadeIn--3 {
+            display: inline-block;
+            opacity: 0;
+        }
+
+        .fadeIn--1 {
+            animation: fade-in-down ease-in .5s .5s forwards;
+        }
+
+        .fadeIn--2 {
+            animation: fade-in-down ease-in .5s 1s forwards;
+        }
+
+        .fadeIn--3 {
+            animation: fade-in-down ease-in .5s 1.5s forwards;
+        }
+
         .scroll-down {
             display: inline-flex;
             align-items: center;
             margin-top: 20px;
             color: hsl(215, 14%, 34%);
             font-size: 17px;
+            opacity: 0;
+            animation: fade-in-up ease-in .5s 2s forwards;
 
             @include rwd(500) {
                 justify-content: center;
@@ -240,5 +261,26 @@ main {
         &:hover::after {
             opacity: 0;
         }
+    }
+}
+
+// ANIMATIONS
+@keyframes fade-in-down {
+    from{
+        transform: translateY(-2.5rem);
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-up {
+    from{
+        transform: translateY(2.5rem);
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
     }
 }
