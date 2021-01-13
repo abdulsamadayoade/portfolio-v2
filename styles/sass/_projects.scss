@@ -64,6 +64,10 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
             grid-gap: 7rem 5rem;
+
+            @include rwdMin(1200) {
+                grid-template-columns: repeat(auto-fit, minmax(35rem, 55rem));
+            }
         }
 
         img {
@@ -76,5 +80,5 @@
 // OTHER PROJECTS SECTION
 .other-projects {
     margin-top: 5rem;
-    padding: 30rem 0 20rem;
+    padding: 13rem 0 20rem;
 }
