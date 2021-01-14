@@ -63,7 +63,7 @@
         .screenshots-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-            grid-gap: 7rem 5rem;
+            grid-gap: 5rem;
 
             @include rwdMin(1200) {
                 grid-template-columns: repeat(auto-fit, minmax(35rem, 55rem));

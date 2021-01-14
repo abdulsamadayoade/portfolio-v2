@@ -137,7 +137,7 @@ p {
 }
 
 .mt-50 {
-  margin-top: 50px;
+  margin-top: 5rem;
 }
 
 .mb-10 {
@@ -966,7 +966,7 @@ main {
   display: grid;
   -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-  grid-gap: 7rem 5rem;
+  grid-gap: 5rem;
 }
 
 @media (min-width: 1200px) {
