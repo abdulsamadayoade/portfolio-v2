@@ -1,0 +1,14 @@
+.resume {
+    max-width: 1250px;
+    border: 1px solid red;
+    margin: 0 auto;
+    padding: 20px;
+
+    &__header {
+        display: flex;
+
+        a {
+            margin-left: auto;
+        }
+    }
+}
