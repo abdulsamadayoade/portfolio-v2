@@ -1,14 +1,100 @@
 .resume {
-    max-width: 1250px;
-    border: 1px solid red;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    font-size: 1.25rem;
 
     &__header {
         display: flex;
+        margin-bottom: 5rem;
 
         a {
             margin-left: auto;
+        }
+    }
+
+    &__main-content {
+        display: grid;
+        grid-template-columns: 25rem 1fr;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+
+        .sidebar {
+            grid-column: 1/2;
+            grid-row: span 2;
+            display: flex;
+            flex-direction: column;
+
+            a {
+                font-family: $secondary-font;
+                color: $primary-color-1;
+                letter-spacing: .2px;
+                display: inline-block;
+                margin-bottom: .28rem;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 3px;
+                    width: 100%;
+                    background-color: $tertiary-color;
+                    transform: translateY(-2px);
+                    z-index: -1;
+                }
+            }
+
+            p {
+                margin-bottom: .28rem;
+                font-family: $tertiary-font;
+                color: hsl(215, 14%, 34%);
+            }
+
+            h4 {
+                font-family: $secondary-font;
+                margin-top: 3.5rem;
+                margin-bottom: .5rem;
+                color: $primary-color-1;
+                letter-spacing: .1px;
+                font-size: 1.5rem;
+            }
+
+            ul {
+                list-style: none;
+            }
+
+            li {
+                font-size: 1.25rem;
+                margin-bottom: .37rem;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 45%;
+                    left: -12px;
+                    transform: translateY(-45%);
+                    height: 7px;
+                    width: 7px;
+                    background-color: hsl(213, 6%, 37%);
+                }
+            }
+        }
+
+        .top-content {
+            background-color: green;
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+
+        .other-content {
+            background-color: yellow;
+            grid-column: 2/3;
+            grid-row: 2/3;
         }
     }
 }
