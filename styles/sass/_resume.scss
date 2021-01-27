@@ -1,8 +1,15 @@
 .resume {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2rem 35px;
     font-size: 1.25rem;
+
+    .content-text {
+        color: hsl(215, 12%, 32%);
+        font-size: 1.54rem;
+        max-width: 63rem;
+        line-height: 1.6;
+    }
 
     &__header {
         display: flex;
@@ -16,7 +23,6 @@
     &__main-content {
         display: grid;
         grid-template-columns: 25rem 1fr;
-        height: 100vh;
         padding: 0;
         margin: 0;
         max-width: 100%;
@@ -86,9 +92,39 @@
         }
 
         .top-content {
-            background-color: green;
             grid-column: 2/3;
             grid-row: 1/2;
+            padding: 1rem 5rem;
+            position: relative;
+
+            .heading {
+                color: $primary-color-1;
+                font-size: 5.2rem;
+                font-family: $secondary-font;
+                line-height: 1.2;
+
+                span {
+                    display: block;
+                    margin: -8px 0;
+                }
+            }
+
+            .subheading {
+                font-size: 2rem;
+                color: hsl(213, 5%, 35%);
+                font-family: $tertiary-font;
+                margin: 1.8rem 0 3.2rem;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 70px;
+                left: 0;
+                height: 2px;
+                width: 100%;
+                background-color: hsl(215, 12%, 32%);
+            }
         }
 
         .other-content {

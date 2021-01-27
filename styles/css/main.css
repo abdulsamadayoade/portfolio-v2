@@ -838,8 +838,15 @@ main {
 .resume {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2rem 35px;
   font-size: 1.25rem;
+}
+
+.resume .content-text {
+  color: #48505b;
+  font-size: 1.54rem;
+  max-width: 63rem;
+  line-height: 1.6;
 }
 
 .resume__header {
@@ -854,7 +861,6 @@ main {
 .resume__main-content {
   display: grid;
   grid-template-columns: 25rem 1fr;
-  height: 100vh;
   padding: 0;
   margin: 0;
   max-width: 100%;
@@ -925,9 +931,39 @@ main {
 }
 
 .resume__main-content .top-content {
-  background-color: green;
   grid-column: 2/3;
   grid-row: 1/2;
+  padding: 1rem 5rem;
+  position: relative;
+}
+
+.resume__main-content .top-content .heading {
+  color: #4831D4;
+  font-size: 5.2rem;
+  font-family: "SFUIText-Bold", sans-serif;
+  line-height: 1.2;
+}
+
+.resume__main-content .top-content .heading span {
+  display: block;
+  margin: -8px 0;
+}
+
+.resume__main-content .top-content .subheading {
+  font-size: 2rem;
+  color: #55595e;
+  font-family: "SFUIText-SemiBold", sans-serif;
+  margin: 1.8rem 0 3.2rem;
+}
+
+.resume__main-content .top-content::after {
+  content: '';
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #48505b;
 }
 
 .resume__main-content .other-content {
