@@ -866,11 +866,33 @@ main {
   max-width: 100%;
 }
 
+@media (max-width: 768px) {
+  .resume__main-content {
+    grid-template-columns: 1fr;
+  }
+}
+
 .resume__main-content .sidebar {
   grid-column: 1/2;
   grid-row: span 2;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .resume__main-content .sidebar {
+    grid-column: 1/1;
+    grid-row: 2/3;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .resume__main-content .sidebar div:not(:first-child) {
+    padding-left: 40px;
+  }
+}
+
+.resume__main-content .sidebar div {
+  margin-bottom: 3.5rem;
 }
 
 .resume__main-content .sidebar a {
@@ -902,7 +924,6 @@ main {
 
 .resume__main-content .sidebar h4 {
   font-family: "SFUIText-Bold", sans-serif;
-  margin-top: 3.5rem;
   margin-bottom: .5rem;
   color: #4831D4;
   letter-spacing: .1px;
@@ -935,6 +956,13 @@ main {
   grid-row: 1/2;
   padding: 1rem 5rem;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .resume__main-content .top-content {
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
 }
 
 .resume__main-content .top-content .heading {
@@ -970,4 +998,11 @@ main {
   background-color: yellow;
   grid-column: 2/3;
   grid-row: 2/3;
+}
+
+@media (max-width: 768px) {
+  .resume__main-content .other-content {
+    grid-column: 1/1;
+    grid-row: 3/4;
+  }
 }

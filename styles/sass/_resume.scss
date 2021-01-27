@@ -26,12 +26,31 @@
         padding: 0;
         margin: 0;
         max-width: 100%;
+        
+        @include rwd(768) {
+            grid-template-columns: 1fr;
+        }
 
         .sidebar {
             grid-column: 1/2;
             grid-row: span 2;
             display: flex;
             flex-direction: column;
+
+            @include rwd(768) {
+                grid-column: 1/1;
+                grid-row: 2/3;
+                flex-direction: row;
+                justify-content: space-around;
+
+                div:not(:first-child) {
+                    padding-left: 40px;
+                }
+            }
+
+            div {
+                margin-bottom: 3.5rem;
+            }
 
             a {
                 font-family: $secondary-font;
@@ -62,7 +81,6 @@
 
             h4 {
                 font-family: $secondary-font;
-                margin-top: 3.5rem;
                 margin-bottom: .5rem;
                 color: $primary-color-1;
                 letter-spacing: .1px;
@@ -96,6 +114,11 @@
             grid-row: 1/2;
             padding: 1rem 5rem;
             position: relative;
+
+            @include rwd(768) {
+                grid-column: 1/1;
+                grid-row: 1/2;
+            }
 
             .heading {
                 color: $primary-color-1;
@@ -131,6 +154,11 @@
             background-color: yellow;
             grid-column: 2/3;
             grid-row: 2/3;
+
+            @include rwd(768) {
+                grid-column: 1/1;
+                grid-row: 3/4;
+            }
         }
     }
 }
