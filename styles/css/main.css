@@ -847,7 +847,15 @@ main {
   color: rgba(71, 71, 71, 0.75);
   font-size: 16px;
   max-width: 63rem;
-  line-height: 28px;
+  line-height: 25px;
+}
+
+.resume h4 {
+  font-family: "SFUIText-Bold", sans-serif;
+  margin-bottom: .5rem;
+  color: #4831D4;
+  letter-spacing: .1px;
+  font-size: 16px;
 }
 
 .resume__header {
@@ -908,14 +916,6 @@ main {
   font-family: "SFUIText-Regular", sans-serif;
   color: #474747;
   font-size: 14px;
-}
-
-.resume__main-content .sidebar h4 {
-  font-family: "SFUIText-Bold", sans-serif;
-  margin-bottom: .5rem;
-  color: #4831D4;
-  letter-spacing: .1px;
-  font-size: 16px;
 }
 
 .resume__main-content .sidebar ul {
@@ -980,7 +980,52 @@ main {
 }
 
 .resume__main-content .other-content {
-  background-color: yellow;
+  border: 1px solid yellow;
   grid-column: 2/3;
   grid-row: 2/3;
+  transform: translateY(-50px);
+}
+
+.resume__main-content .other-content h4 {
+  font-size: 20px;
+  position: relative;
+}
+
+.resume__main-content .other-content h4:after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  height: 8px;
+  width: 90px;
+  border-radius: 2px;
+  background-color: #CCF381;
+  z-index: -1;
+}
+
+.resume__main-content .other-content div {
+  margin: 25px 0;
+  padding: 0 10px;
+  position: relative;
+}
+
+.resume__main-content .other-content h5 {
+  color: #4831D4;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.resume__main-content .other-content p {
+  max-width: 550px;
+}
+
+.resume__main-content .other-content .p-links {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  border: 1px solid red;
+}
+
+.resume__main-content .other-content .p-links a {
+  text-transform: uppercase;
 }
