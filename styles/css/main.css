@@ -837,16 +837,17 @@ main {
 
 .resume {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 70px auto;
   padding: 2rem 35px;
   font-size: 1.25rem;
+  background-color: #f5f4fc;
 }
 
 .resume .content-text {
-  color: #48505b;
-  font-size: 1.54rem;
+  color: rgba(71, 71, 71, 0.75);
+  font-size: 16px;
   max-width: 63rem;
-  line-height: 1.6;
+  line-height: 28px;
 }
 
 .resume__header {
@@ -856,6 +857,11 @@ main {
 
 .resume__header a {
   margin-left: auto;
+}
+
+.resume__header img {
+  height: 15px;
+  width: 15px;
 }
 
 .resume__main-content {
@@ -879,10 +885,11 @@ main {
 
 .resume__main-content .sidebar a {
   font-family: "SFUIText-Bold", sans-serif;
+  font-size: 14px;
   color: #4831D4;
   letter-spacing: .2px;
   display: inline-block;
-  margin-bottom: .28rem;
+  margin-bottom: .35rem;
   position: relative;
 }
 
@@ -894,14 +901,13 @@ main {
   height: 3px;
   width: 100%;
   background-color: #CCF381;
-  transform: translateY(-2px);
-  z-index: -1;
 }
 
 .resume__main-content .sidebar p {
   margin-bottom: .28rem;
-  font-family: "SFUIText-SemiBold", sans-serif;
-  color: #4b5563;
+  font-family: "SFUIText-Regular", sans-serif;
+  color: #474747;
+  font-size: 14px;
 }
 
 .resume__main-content .sidebar h4 {
@@ -909,7 +915,7 @@ main {
   margin-bottom: .5rem;
   color: #4831D4;
   letter-spacing: .1px;
-  font-size: 1.5rem;
+  font-size: 16px;
 }
 
 .resume__main-content .sidebar ul {
@@ -917,8 +923,10 @@ main {
 }
 
 .resume__main-content .sidebar li {
-  font-size: 1.25rem;
-  margin-bottom: .37rem;
+  margin-bottom: .6rem;
+  font-family: "SFUIText-Regular", sans-serif;
+  color: #474747;
+  font-size: 14px;
   position: relative;
 }
 
@@ -928,9 +936,9 @@ main {
   top: 45%;
   left: -12px;
   transform: translateY(-45%);
-  height: 7px;
-  width: 7px;
-  background-color: #595e64;
+  height: 5px;
+  width: 5px;
+  background-color: #474747;
 }
 
 .resume__main-content .top-content {
@@ -953,10 +961,12 @@ main {
 }
 
 .resume__main-content .top-content .subheading {
-  font-size: 2rem;
-  color: #55595e;
-  font-family: "SFUIText-SemiBold", sans-serif;
-  margin: 1.8rem 0 3.2rem;
+  font-size: 22px;
+  color: #474747;
+  font-family: "SFUIText-Regular", sans-serif;
+  font-weight: normal;
+  margin: 1.9rem 0 3.3rem;
+  letter-spacing: .4px;
 }
 
 .resume__main-content .top-content::after {
@@ -964,9 +974,9 @@ main {
   position: absolute;
   bottom: 90px;
   left: 0;
-  height: 2px;
+  height: 1px;
   width: 100%;
-  background-color: #48505b;
+  background-color: #cbc9dd;
 }
 
 .resume__main-content .other-content {

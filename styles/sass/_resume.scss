@@ -1,14 +1,15 @@
 .resume {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 70px auto;
     padding: 2rem 35px;
     font-size: 1.25rem;
+    background-color: #f5f4fc;
 
     .content-text {
-        color: hsl(215, 12%, 32%);
-        font-size: 1.54rem;
+        color: rgba(71, 71, 71, 0.75);
+        font-size: 16px;
         max-width: 63rem;
-        line-height: 1.6;
+        line-height: 28px;
     }
 
     &__header {
@@ -17,6 +18,11 @@
 
         a {
             margin-left: auto;
+        }
+
+        img {
+            height: 15px;
+            width: 15px;
         }
     }
 
@@ -39,10 +45,11 @@
 
             a {
                 font-family: $secondary-font;
+                font-size: 14px;
                 color: $primary-color-1;
                 letter-spacing: .2px;
                 display: inline-block;
-                margin-bottom: .28rem;
+                margin-bottom: .35rem;
                 position: relative;
 
                 &::after {
@@ -53,15 +60,14 @@
                     height: 3px;
                     width: 100%;
                     background-color: $tertiary-color;
-                    transform: translateY(-2px);
-                    z-index: -1;
                 }
             }
 
             p {
                 margin-bottom: .28rem;
-                font-family: $tertiary-font;
-                color: hsl(215, 14%, 34%);
+                font-family: $primary-font;
+                color: #474747;
+                font-size: 14px;
             }
 
             h4 {
@@ -69,7 +75,7 @@
                 margin-bottom: .5rem;
                 color: $primary-color-1;
                 letter-spacing: .1px;
-                font-size: 1.5rem;
+                font-size: 16px;
             }
 
             ul {
@@ -77,8 +83,10 @@
             }
 
             li {
-                font-size: 1.25rem;
-                margin-bottom: .37rem;
+                margin-bottom: .6rem;
+                font-family: $primary-font;
+                color: #474747;
+                font-size: 14px;
                 position: relative;
 
                 &::before {
@@ -87,9 +95,9 @@
                     top: 45%;
                     left: -12px;
                     transform: translateY(-45%);
-                    height: 7px;
-                    width: 7px;
-                    background-color: hsl(213, 6%, 37%);
+                    height: 5px;
+                    width: 5px;
+                    background-color: #474747;
                 }
             }
         }
@@ -113,10 +121,12 @@
             }
 
             .subheading {
-                font-size: 2rem;
-                color: hsl(213, 5%, 35%);
-                font-family: $tertiary-font;
-                margin: 1.8rem 0 3.2rem;
+                font-size: 22px;
+                color: #474747;
+                font-family: $primary-font;
+                font-weight: normal;
+                margin: 1.9rem 0 3.3rem;
+                letter-spacing: .4px;
             }
 
             &::after {
@@ -124,9 +134,9 @@
                 position: absolute;
                 bottom: 90px;
                 left: 0;
-                height: 2px;
+                height: 1px;
                 width: 100%;
-                background-color: hsl(215, 12%, 32%);
+                background-color: rgb(203, 201, 221);
             }
         }
 
