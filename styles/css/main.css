@@ -973,7 +973,7 @@ main {
 .resume__main-content .top-content::after {
   content: '';
   position: absolute;
-  bottom: 90px;
+  bottom: -10px;
   left: 0;
   height: 1px;
   width: 100%;
