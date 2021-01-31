@@ -75,7 +75,7 @@ html {
 body {
   font-family: "SFUIText-Regular", sans-serif;
   font-size: 1.6rem;
-  line-height: 1.45;
+  line-height: 1.52;
   background-color: #fafafa;
   position: relative;
   width: 100%;
@@ -574,6 +574,22 @@ main {
   }
   .about--section .about__col--2 {
     margin-top: 4rem;
+  }
+}
+
+.about--section a.resume--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .about--section a.resume--mobile {
+    display: inline-flex;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about--section a.resume--pc {
+    display: none;
   }
 }
 
