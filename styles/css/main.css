@@ -875,6 +875,7 @@ main {
 .resume__main-content {
   display: grid;
   grid-template-columns: 25rem 1fr;
+  row-gap: 50px;
   padding: 0;
   margin: 0;
   max-width: 100%;
@@ -980,10 +981,9 @@ main {
 }
 
 .resume__main-content .other-content {
-  border: 1px solid yellow;
   grid-column: 2/3;
   grid-row: 2/3;
-  transform: translateY(-50px);
+  padding: 0 50px;
 }
 
 .resume__main-content .other-content h4 {
@@ -1004,7 +1004,7 @@ main {
 }
 
 .resume__main-content .other-content div {
-  margin: 25px 0;
+  margin: 40px 0;
   padding: 0 10px;
   position: relative;
 }
@@ -1023,9 +1023,10 @@ main {
   position: absolute;
   right: 0;
   top: 8px;
-  border: 1px solid red;
 }
 
 .resume__main-content .other-content .p-links a {
-  text-transform: uppercase;
+  text-transform: lowercase;
+  margin: 0 4px;
+  font-family: "SFUIText-SemiBold", sans-serif;
 }
