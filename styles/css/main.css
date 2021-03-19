@@ -860,11 +860,11 @@ main {
 
 .resume {
   position: relative;
-  top: 15rem;
+  top: 13rem;
   width: 100%;
   max-width: 110rem;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 2rem;
 }
 
 .resume__heading {
@@ -946,6 +946,10 @@ main {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #4831D4;
+}
+
+.resume .section__inner h3 a {
+  color: inherit;
 }
 
 .resume .section__inner ul {
