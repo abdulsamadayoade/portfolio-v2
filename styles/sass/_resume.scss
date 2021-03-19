@@ -43,6 +43,69 @@
 
         span {
             border-bottom: 3px solid $tertiary-color;
+            transition: border-color .2s ease-in-out;
+        }
+
+        &:hover span {
+            border-color: transparent;
+        }
+    }
+
+    .section {
+        max-width: 95rem;
+        margin: 9rem auto 0;
+
+        &__title {
+            display: inline-block;
+            position: relative;
+            padding-bottom: 3px;
+            margin-bottom: 1.5rem;
+            color: $primary-color-1;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 10px;
+                left: 0;
+                height: 7px;
+                width: 100%;
+                background-color: $tertiary-color;
+                z-index: -1;
+            }
+        }
+
+        &__inner {
+            max-width: 60rem;
+            margin-left: auto;
+            margin-bottom: 5rem;
+
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                color: $primary-color-1;
+            }
+
+            ul {
+                list-style: none;
+                padding-left: 2rem;
+            }
+
+            li {
+                color: $grey-color;
+                margin-bottom: .8rem;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 45%;
+                    left: -3%;
+                    transform: translateY(-45%);
+                    height: 5px;
+                    width: 5px;
+                    background-color: $grey-color;
+                }
+            }
         }
     }
 }
