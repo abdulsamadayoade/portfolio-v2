@@ -892,19 +892,27 @@ main {
 .resume__download {
   display: inline-block;
   position: relative;
-  padding-left: 2rem;
   color: #4831D4;
+  display: flex;
+  align-items: center;
 }
 
 .resume__download::before {
-  content: "\f15c";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
+  height: 18px;
+  width: 18px;
+  background-image: url("../../images/download.svg");
+  background-size: cover;
+  margin-top: 3px;
 }
 
 .resume__download span {
-  border-bottom: 3px solid #CCF381;
+  display: inline-block;
+  margin-left: 3rem;
+  border-bottom: 2px solid #CCF381;
   transition: border-color .2s ease-in-out;
 }
 
