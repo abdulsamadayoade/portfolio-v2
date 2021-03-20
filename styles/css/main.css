@@ -928,7 +928,7 @@ main {
   display: inline-block;
   position: relative;
   padding-bottom: 3px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.7rem;
   color: #4831D4;
 }
 
@@ -950,8 +950,8 @@ main {
 }
 
 .resume .section__inner h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  margin-bottom: 1.2rem;
   color: #4831D4;
 }
 
@@ -966,7 +966,7 @@ main {
 
 .resume .section__inner li {
   color: #474747;
-  margin-bottom: .8rem;
+  margin-bottom: 1rem;
   position: relative;
 }
 
@@ -979,4 +979,10 @@ main {
   height: 5px;
   width: 5px;
   background-color: #474747;
+}
+
+@media screen and (max-width: 400px) {
+  .resume .section__inner li::before {
+    left: -5%;
+  }
 }
