@@ -32,7 +32,7 @@
         display: inline-block;
         position: relative;
         color: $primary-color-1;
-        display: flex;
+        display: inline-flex;
         align-items: center;
 
         &::before {
@@ -48,7 +48,6 @@
         }
 
         span {
-            display: inline-block;
             margin-left: 3rem;
             border-bottom: 2px solid $tertiary-color;
             transition: border-color .2s ease-in-out;

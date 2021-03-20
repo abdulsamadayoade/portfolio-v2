@@ -893,7 +893,7 @@ main {
   display: inline-block;
   position: relative;
   color: #4831D4;
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
@@ -910,7 +910,6 @@ main {
 }
 
 .resume__download span {
-  display: inline-block;
   margin-left: 3rem;
   border-bottom: 2px solid #CCF381;
   transition: border-color .2s ease-in-out;
